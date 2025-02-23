@@ -15,7 +15,6 @@ console.log('typeof nothing', typeof nothing)
 console.log('typeof undefined', typeof undefinedVar);
 console.log('typeof symbol', typeof symbol);
 
-
 // Object
 let person = {
     name: 'Himanshu',

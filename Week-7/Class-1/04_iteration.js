@@ -31,7 +31,6 @@ let totalSales1 = saleData.reduce((acc, sale) => acc+sale.price, 0)// 0+20+30+15
 console.log('totalSales1', totalSales1)
 
 
-
 //Interview Question - Build you own pipe function using reduce from MDN
 console.log('totalSales...', totalSales)
 "Himanshu".toUpperCase().indexOf('H') // 0

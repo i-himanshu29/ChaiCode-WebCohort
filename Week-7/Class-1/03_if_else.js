@@ -15,7 +15,6 @@ prepareChai('Black tea'); // not work
 prepareChai('green tea');
 
 
-
 //Question -1
 // Ek online store mein, agar customer ka total bill amount 1000 se zayada
 // hai , toh 10% discount milta hai . Nahi toh , full amount pay karna padta hai.

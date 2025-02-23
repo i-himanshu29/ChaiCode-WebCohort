@@ -32,7 +32,6 @@ let newChaiTypes = [...chaiTypes,"Chamomile Chai"] // merge two arrays using spr
 console.log('newChaiTypes', newChaiTypes)
 
 //Object
-
 let chaiRecipe = {
     name: "Masala Chai",
     ingredients: {

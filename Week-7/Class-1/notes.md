@@ -1,5 +1,6 @@
 
 ## dataType - Primitive and Non-Primitive
+
 ## object
 ## comparision
 ## array
