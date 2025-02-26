@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="items"></ul>
+
+    <!-- PART-1... Add if you want to show on api response data on console -->
+    <!-- <script>
+      const items = document.getElementById("items");
+      fetch("https://api.freeapi.app/api/v1/public/randomproducts")
+        .then((response) => {
+          response
+            .json()
+            .then((obj) => {
+              const products = obj.data.data;
+              console.log(products);
+              products.forEach((product) => {
+                const li = document.createElement("li");
+                li.innerText = product.title;
+                items.appendChild(li);
+              });
+            })
+            .catch((err) => {
+              console.log("Error converting JSON");
+            });
+        })
+        .catch((err) => {})
+        .finally(() => {});
+        
+    </script> -->
+
+
+    <!--PART-2... Now code is looking very ugly so their you can use promise chainning -->
+    <!-- <script>
+        const items = document.getElementById("items");
+        fetch("https://api.freeapi.app/api/v1/public/randomproducts")
+          .then((response) =>  response.json())
+          .then((obj) => {
+            const products = obj.data.data;
+            console.log(products);
+            products.forEach((product) => {
+              const li = document.createElement("li");
+              li.innerText = product.title;
+              items.appendChild(li);
+            });
+          })
+          .catch((err) => {})
+          .finally(() => {});
+          
+      </script> -->
+
+
+      
+      <!--Part-3... Now code is looking very ugly so their you can use promise chainning -->
+      <script>
+        const items = document.getElementById("items");
+
+        function renderToScreen(obj){
+            const products = obj.data.data;
+            console.log(products);
+            products.forEach((product) => {
+              const li = document.createElement("li");
+              li.innerText = product.title;
+              items.appendChild(li);
+            });
+        }
+        fetch("https://api.freeapi.app/api/v1/public/randomproducts")
+          .then((response) =>  response.json())
+          .then(renderToScreen)
+          .catch((err) => {})
+          .finally(() => {});
+          
+      </script>
+  </body>
+  // for checking promise and its return
+  <script src="./03_Promises.js"></script>
+</html>
