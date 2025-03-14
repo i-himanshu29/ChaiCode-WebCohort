@@ -47,3 +47,9 @@ Node , Bun, Deno ye sab javascrip ko execute karwaate hai
 2.name , email , Password , PhoneNo , role:USER,Admin
 isVerified , CreatedAt , Reset Password
 passwordResetToken , passwordResetExpires , verificationToken 
+
+## validation - library
+1. Zod 
+2. yup
+3. Formik
+4. Express Validator
