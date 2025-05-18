@@ -21,7 +21,7 @@ for(let h=0;h<teas.length;h++){
 }
 
 for(let h=0;h<teas.length;h++){ // if you remove h++...infinite loop
-    console.log(`Tea at index ${h} : ${teas[h]}`)
+    console.log(`Tea at index1 ${h} : ${teas[h]}`)
 }
 for(let h=5;h<teas.length;h++){ // if you remove h++...infinite loop
     console.log(`Tea at index => ${h} : ${teas[h]}`)
