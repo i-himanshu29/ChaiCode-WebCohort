@@ -23,6 +23,10 @@ Team builder for ChaiCode,
 
 Keep in mind:
 - vite environment variables
+````
+VITE_SOME_KEY=123
+DB_PASSWORD=foobar
+````
 
 
 Question and answer:
