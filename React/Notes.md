@@ -148,3 +148,144 @@ form has multiple fields, rather than writing each one, made dynamic
 it's not an array
 we are using [] to dynamically set the object key from e.target.name
 ````
+
+
+````
+To be delete....
+lec-3 of react
+
+
+for lect-3 of react
+
+1.
+where is state saved? in the browser?
+Anirudh 10:04 PM 
+no, but you can persist if you want to local storage
+default its on ram of the running machine
+
+2.
+
+Sir in react, whenever state changes...component re renders....so is it the same case with state management libraries also ???
+Anirudh 10:06 PM 
+difference is state management libraries like zustand trigger re-renders only for components that subscribe to the changed state
+BUT in react context api it re-renders all consumers
+
+3.
+
+Anirudh, subscribe means whichever component uses zustand ? Am i right ?
+Anirudh 10:08 PM 
+exactly only the components using that specific state from zustand will re-render not everything
+
+4.
+
+@TA's one doubt, in react-redux, initialState and resertState are two reducers that can be used to set the initial values and reset values
+but in zustand initial values can be set by just naming variables : values
+but what about the resetState like in redux
+Akash Kadlag 10:09 PM 
+yes 
+redux is designed at early state managers.
+and it’s apis are differnt
+
+
+5.
+
+persist se local storage me store kar skte hai ??? but what does that mean ?
+Anirudh 10:10 PM 
+on page reloads you will not loose your state values
+
+6.
+
+so akash sir, zustand doesn't provide a resetState by default, instead we have to make it a function like every other and call it to reset ?
+Akash Kadlag 10:12 PM 
+import { create } from 'zustand';
+
+const useStore = create((set) => {
+  const initialState = {
+    count: 0,
+    name: 'Guest',
+  };
+
+  return {
+    ...initialState,
+    increment: () => set((state) => ({ count: state.count + 1 })),
+    reset: () => set(initialState), 
+  };
+});
+
+
+7.
+
+linting syntax check krti hai ?
+Anirudh 10:18 PM 
+right linting checks syntax and also enforces code style and best practices to follow in codebase
+
+8.
+
+sir turbo pack kya hota he?
+Anirudh 10:13 PM 
+bundler by vercel as their replacement for webpack
+
+
+9.
+
+what is .mjs here?
+Anirudh 10:16 PM 
+to follow module syntax of with import/exports 
+have to use mjs extension 
+its an es module file simple
+
+
+10.
+
+Sir what is hydration?
+Anirudh 10:17 PM 
+react attaching an event listeners to html file from server and making it interactive
+
+
+11.
+
+when to use Next js 
+and
+when to use react 
+when not to use Next js
+Anirudh 10:16 PM 
+use next.js for seo and routing
+use react for pure frontend
+skip next.js if no SSR needed
+
+
+12.
+
+sir edge function ?
+Anirudh 10:18 PM 
+vercel edge functions run server code close to users for faster response, using a lightweight runtime
+
+13.
+
+isme routing secure kaise krenge
+Akash Kadlag 10:19 PM 
+app routing is secure and maitain by next.js team
+
+
+14.
+
+when to use react-router-dom and when to use tanstack router
+Anirudh 10:19 PM 
+use router dom for simple routing needs
+use tanstack router for typesafe, nested and data driven routing
+
+15.
+
+sir what is the difference between graphql, grpc, trpc
+Anirudh 10:27 PM 
+graphql lets clients ask exactly what data they need
+
+grpc is fast and uses binary format
+
+trpc connects frontend to backend with typesafety and no extra code
+
+16.
+
+when to realise im in tutorial hell and save myself??
+Anirudh 10:28 PM 
+when you are not able to code a project by yourself without watching a tutorial then realise you are in tutorial hell
