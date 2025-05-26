@@ -37,4 +37,21 @@ then shouls i render whole module including html , css, js or can i render only 
 
 the ans is ki agar aap ke paas koi algo hai jo pata laga le ki kitne page generated hai toh fir devOps ka page generate kar lo extra
 
+````
 
+## hydrateRoot
+````
+jo hum react ke index.jsx me "root.render" likhte the ab uski jagah "root.hydrateRoot()" likhenge
+
+JB Kbhi bhi hydration error aye toh mtlb hamara jo element hai us tak hamari jo client side js pahunchni chahiye the wo nhi pahunnchi hai usse pahle hi use hone lag gye hai toh error aata hai
+
+
+server dom is not equal to client dom(as expected)
+````
+
+DB connection 
+````
+connected
+disconnected
+connecting
+````
