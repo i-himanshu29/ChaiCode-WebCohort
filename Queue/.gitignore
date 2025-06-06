@@ -1,0 +1,57 @@
+# Node.js specific
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Logs
+logs/
+*.log
+logs/*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
+out/
+.next/
+.vite/
+
+# Dependency directories
+.bower_components/
+jspm_packages/
+
+# IDE/editor-specific
+.idea/
+.vscode/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Tests
+coverage/
+*.lcov
+
+# Misc
+*.bak
+*.tmp
+*.temp
+*.old
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# TypeScript specific
+*.tsbuildinfo
+
+# Other
+*.log
