@@ -36,10 +36,10 @@ async function createFolder(path){
 
 
 
-async function getWeatherData(city) {
-    const url = `https://wttr.in/{city}?format=%C+%t`
+async function getWeatherData(city=' ') {
+    const url = `https://wttr.in/${city.toLowerCase()}?format=%C+%t`
     const result = await axios.get(url,{responseType:'text'})
-  return `THe weather of ${city} is ${result} C`;
+  return `THe weather of ${city} is ${result.data} C`;
 }
 
 const availableFunctions = {
