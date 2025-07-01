@@ -1,2 +1,64 @@
-/node_modules
-/.env
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# Build outputs
+dist/
+build/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Debug files
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor-specific files
+.idea/
+.vscode/
+*.code-workspace
+
+# Coverage reports
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Miscellaneous
+*.lock
+*.log
+*.cache
+*.pid
+*.seed
+*.seed.json
+
+# Docker-specific files
+docker-compose.override.yml
+.dockerignore
+docker-compose*.yml
+docker-compose*.override.yml
+*.tar
+*.tgz
+
+# Docker build files
+dockerfile
+Dockerfile
+Dockerfile.*
+docker-compose.yml
+docker-compose.*.yml
