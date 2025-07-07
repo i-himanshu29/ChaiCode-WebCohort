@@ -99,10 +99,11 @@ console.log("Bye Bye Bye");
 //     console.log('I am inside loop') // aab hamara call stack kabhi free hi nhi hoga
 // }
 
-    console.log('Bye Bye')
-    console.log('Bye Bye')
-    console.log('Bye Bye')
-    // 100 Millions(3h)
+console.log('Bye Bye')
+console.log('Bye Bye')
+console.log('Bye Bye')
+// 100 Millions(suppose it takes 3h to execute)
+// means it runs after 3 hour when the callstack are free
 
 
 

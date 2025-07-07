@@ -32,11 +32,35 @@ console.log('totalSales1', totalSales1)
 
 
 //Interview Question - Build you own pipe function using reduce from MDN
+const pipe =
+  (...functions) =>
+  (initialValue) =>
+    functions.reduce((acc, fn) => fn(acc), initialValue);
+
+// Building blocks to use for composition
+const double = (x) => 2 * x;
+const triple = (x) => 3 * x;
+const quadruple = (x) => 4 * x;
+
+// Composed functions for multiplication of specific values
+const multiply6 = pipe(double, triple);
+const multiply9 = pipe(triple, triple);
+const multiply16 = pipe(quadruple, quadruple);
+const multiply24 = pipe(double, triple, quadruple);
+
+// Usage
+multiply6(6); // 36
+multiply9(9); // 81
+multiply16(16); // 256
+multiply24(10); // 240
+
+
+
 console.log('totalSales...', totalSales)
-"Himanshu".toUpperCase().indexOf('H') // 0
+"Himanshu".toUpperCase().indexOf('H') // 0, chaining or pipe
 
 
-//low stock 
+//low stock - Items less than 50
 
 let inventory = [
     {
@@ -62,7 +86,7 @@ let lowStockitems = inventory.filter((item) => {
     return item.stock < 50
 });
 console.log('lowStockitems', lowStockitems)
-// filter se jo output milta hai wo atleast ek array hota hai
+// filter se jo output milta hai wo atleast ek array hota hai- chahe wo empty hi kyu na ho
 
 let userActivity = [
     {
@@ -92,7 +116,7 @@ let userActivity = [
 // the value of the current element .On the first call , its value is the first value in the array || array[0]
 // if initialValue is specified; otherwise, its value is the second value in the array || array[1].
 let mostActiveUser = userActivity.reduce((maxUser, user) => 
-    user.activityCount >  user.activityCount ?  user :maxUser
+    user.activityCount >  maxUser.activityCount ?  user :maxUser
 );
 
 console.log('mostActiveUser', mostActiveUser)

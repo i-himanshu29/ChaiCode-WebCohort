@@ -8,8 +8,9 @@ let expenses = [
 // let expenseReport = [];
 let expenseReport = expenses.reduce((report,expense)=>{
      report[expense.category] = report[expense.category] + expense.amount ;
+
      // or below one is Dynamic
-    //  report[expense.category] += (report[expense.category] || 0) ;
+    //  report[expense.category] = (report[expense.category] || 0) + expense.amount;
      return report;
 },
 {Food:0,Utilites:0}
@@ -17,6 +18,7 @@ let expenseReport = expenses.reduce((report,expense)=>{
 console.log("Expences Report", expenseReport);
 
 // Task-2  ------------------
+// Give me that tasks which is not completed yet and sort them.
 
 let tasks = [
 	{ description: "Write report", completed: false, priority: 2},
@@ -24,6 +26,7 @@ let tasks = [
 	{ description: "Prepare presentation", completed: false, priority: 1},
 ];
 
+// approache- filter and sort 
 
 let pendingSortedTasks = tasks
     .filter((task)=>!task.completed)
@@ -58,7 +61,7 @@ let averageRatings = movieRatings.map((movie)=>{
     let average = sum/movie.rating.length;
     // movie.ratings = average;
     // return movie;           
-    return {title:movie.title, ratings:average.toFixed(2)};
+    return {title:movie.title, ratings:average.toFixed(2)};//ratings-it mutate the original array
 });
 
 console.log("Average Ratings", averageRatings);

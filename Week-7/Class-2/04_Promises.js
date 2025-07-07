@@ -68,7 +68,7 @@
 // // means agar microtask queue khaali hai toh hi event loop task queue/ callback queue ko uthayegi
 
 
-// Part -3 ..................
+// Part -4 ..................
 
 // //Interview Question
 // //Starvation in js - Event loop - callback queue me kuch hona chahiye aur call stack khali ho tabhi callback queue se call stack me jayega
@@ -85,7 +85,7 @@
 // // Hello after 0s
 
 
-// Part-4...................
+// Part-5...................
 //Starvation - ek promise exectute hua useke baad doosra daal diya and so on.
 // mtlb callback Queue/Task Queue me jo rakhha hai uski baari kabhi ayegi hi nhi
 // mtlb jab tak micro task queue khaaali nhi hoga tab tak callback queue pickup hi nhi hogi
@@ -113,7 +113,7 @@
 
 
 
-//Part - 5....................
+//Part - 6....................
 // check on js visiualizer website
 // => js visiualizer website open and see the real time task execution
 
