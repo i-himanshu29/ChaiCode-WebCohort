@@ -40,8 +40,9 @@ timeElement.textContent = `${hours}:${minutes}:${seconds}:${ampm}`;
 
 //PART-3 ...........................................
 //Interview Question
-//SetInterval - ek time frame me kaam karta hai...kab se kab tak
-//Set timeout - ye karta hi rahta hai
+//SetInterval - ek time frame me kaam karta hai...kab se kab tak... ye karta hi rahta hai
+//Set timeout -....setTimeout() is executed only once.
+
 // Interview me jjane se pahle tumhaare mind me har cheej ke example hone chahiye
 // interview me jaa ke soacha nhi hota
 

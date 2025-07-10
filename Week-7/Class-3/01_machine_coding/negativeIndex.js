@@ -98,7 +98,7 @@
 // }
 
 // this is default behaviour now enable the negative index
-
+// 1. detect the negative number
 
 // function negativeIndex(arr){
 //     return new Proxy(arr,{

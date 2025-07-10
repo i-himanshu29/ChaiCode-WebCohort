@@ -51,7 +51,7 @@
 // // data.catch(function(){console.log('Areey Yaar')})
 // output - 'Lo ji, data aagya'
 
-//for .....................
+//PART-3 for .....................
 // run rejected par
 //.finally(function)
 // console.log('Hi')//run sync
@@ -77,5 +77,5 @@ data.finally(function(){console.log('Mujhe Fadak nhi padhta')})
 // SETTLED - mtlb kise na kise state me aa kar baith gye like (finally)
 
 
-// PART-3 .................................................................
+// .................................................................
 
