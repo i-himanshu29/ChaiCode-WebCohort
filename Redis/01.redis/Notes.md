@@ -1,4 +1,15 @@
-- Firstly we use pnpm instead of npm
+- Firstly we use pnpm instead of npm  [pnpm i typescript @types/node -D]
+[pnpm i express@4.x]
+[pnpm i @types/express@4.x -D]
+[tsc --init]
+In tsconfig.json [uncomment "rootDir":"./src" and "outDir":"./dist"]
+Write index.ts file
+Configure script ["build":"tsc -p ."]
+"start": "node dist/index",
+"dev": "tsc-watch --onSuccess \"npm start\""
+pnpm i tsc-watch -D
+To Run : pnpm dev
+
 
 - Secondly - Api Calling wwith axios with the help of standard method
 

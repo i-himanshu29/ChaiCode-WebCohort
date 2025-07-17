@@ -16,6 +16,23 @@
 Hence Redis came and say i solved all the problem 
 and make a standard for everyone
 
+# this folder in action from here -> 
+# Docker compose file
+create a docker-compose.yml file and installed 
+- docker pull redis
+- docker compose up -d
+
+dependencies -
+- pnpm i ioredis
+
+Run : pnpm dev
+
+You can Start a new Server : export PORT = 8001 && pnpm dev
+You can Start a new Server : export PORT = 8002 && pnpm dev
+
+In both the cases cache hit
+
+Now this is distributed
 
 # Valkey
 valkey is a dropin replacement for redis
