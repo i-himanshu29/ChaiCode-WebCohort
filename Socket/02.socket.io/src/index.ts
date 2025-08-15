@@ -8,6 +8,8 @@ const app = express();//express server
 const httpServer = http.createServer(app);//http server[Express server ko mount kar diya http pr ]
 const io = new Server();//socket server
 io.attach(httpServer);
+
+// Every client ko socket bolte hai
 io.on('connection',(socket)=>{
     console.log(`Socket Connected`,socket.id);
     socket.on('message',(msg)=>{

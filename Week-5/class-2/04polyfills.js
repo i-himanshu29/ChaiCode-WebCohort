@@ -69,7 +69,7 @@ const n = arr.myMap(function(value,index){
 const n4 = arr.myMap((value,index) => index == 1 ? e*3 : e);
 console.log('n4', n4)
 
-const n2= arr.map((e)=>e*3);
+const n2= arr.myMap((e)=>e*3);
 console.log(n)
 console.log(arr)
 console.log(n2)

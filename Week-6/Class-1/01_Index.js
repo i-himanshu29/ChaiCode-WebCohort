@@ -55,6 +55,7 @@ console.log(obj1.getFullname());
 console.log(obj3.getFullname());
 console.log(obj3.toString())
 //called Prototype Chaining
+// this will keep going
 // __proto__ me jaata rahega until it reaches null 
 
 // voilating DRY Principle 
