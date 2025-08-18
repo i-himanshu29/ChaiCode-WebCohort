@@ -78,6 +78,11 @@
 
 // A functtion returning a function with its lexical scope binded is known as closure fn.
 
+// How It Lexical Scope Work ?
+
+// - It's based on the physical location of variables and code blocks in the source code.
+// - It's determined when the code is created , not when it's run.
+// - Inner functions can use variables from the outer functions they are inside of
 
 // let fname = 'Piyush';
 // function sayName(){

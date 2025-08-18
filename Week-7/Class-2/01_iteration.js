@@ -37,19 +37,19 @@ console.log("Pending Sorted Tasks", pendingSortedTasks);
 
 // Task-3  ------------------
 let movieRatings= [
-    {title:"The Dark Knight", rating: [4,5,3]},
-    {title:"The Shawshank Redemption", rating: [5,5,5]},
-    {title:"The Godfather", rating: [4,5,4]},
+    {title:"The Dark Knight", ratings: [4,5,3]},
+    {title:"The Shawshank Redemption", ratings: [5,5,5]},
+    {title:"The Godfather", ratings: [4,5,4]},
 ];
 //Find Average Rating of each movie
 // let averageRating = movieRatings.map((movie)=>{
-//     let sum = movie.rating.reduce((total,rating)=>total+rating,0);
+//     let sum = movie.ratings.reduce((total,rating)=>total+rating,0);
 //     return {title:movie.title, average:sum/movie.rating.length};
 // });
 // or 
 // let averageRating = movieRatings.map((movie)=>{
-//     let sum = movie.rating.reduce((total,rating)=>total+rating,0);
-//     let average = sum/movie.rating.length;
+//     let sum = movie.ratings.reduce((total,rating)=>total+rating,0);
+//     let average = sum/movie.ratings.length;
 //     return {title:movie.title, averageRating:average.toFixed(2)};
 // });
 
@@ -57,8 +57,8 @@ let movieRatings= [
 
 // or It is Incomplete so Complete it 
 let averageRatings = movieRatings.map((movie)=>{
-    let sum = movie.rating.reduce((total,rating)=>total+rating,0);
-    let average = sum/movie.rating.length;
+    let sum = movie.ratings.reduce((total,rating)=>total+rating,0);
+    let average = sum/movie.ratings.length;
     // movie.ratings = average;
     // return movie;           
     return {title:movie.title, ratings:average.toFixed(2)};//ratings-it mutate the original array
